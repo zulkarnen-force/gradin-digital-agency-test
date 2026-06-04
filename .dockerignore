@@ -1,0 +1,38 @@
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile
+docker-compose.yml
+
+# Dependencies
+vendor
+node_modules
+
+# Laravel cache
+bootstrap/cache/*.php
+
+# Storage
+storage/logs/*
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+storage/framework/testing/*
+
+# IDE
+.idea
+.vscode
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+coverage
+.phpunit.result.cache
+
+!.env.example
+
+# Misc
+*.log

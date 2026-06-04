@@ -1,0 +1,169 @@
+{
+  "info": {
+    "_postman_id": "f8529510-c861-4e9d-99f1-4d73b2e86ac3",
+    "name": "radin-digital-agency-test",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "39806700"
+  },
+  "item": [
+    {
+      "name": "Get by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/couriers/1",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "couriers",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get All",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/couriers?search=Budi&per_page=10&page=1",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "couriers"
+          ],
+          "query": [
+            {
+              "key": "search",
+              "value": "Budi"
+            },
+            {
+              "key": "per_page",
+              "value": "10"
+            },
+            {
+              "key": "page",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"first_name\":\"Budio\"\n}   ",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/couriers/1",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "couriers",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"first_name\":\"Prabowo\",\n    \"last_name\":\"Subianto\",\n    \"level\":\"5\"\n}   ",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/couriers",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "couriers"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"first_name\":\"Prabowo\",\n    \"last_name\":\"Subianto\",\n    \"level\":\"5\"\n}   ",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/couriers/13",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "couriers",
+            "13"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": ""
+    }
+  ]
+}
